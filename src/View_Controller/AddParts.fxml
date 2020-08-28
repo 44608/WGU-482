@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addPart_pane" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddPartController">
+   <children>
+      <RadioButton fx:id="addPartOutSourced_radio" layoutX="371.0" layoutY="14.0" mnemonicParsing="false" text="OutSourced">
+         <toggleGroup>
+            <ToggleGroup fx:id="SOURCE" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="addPartInHouse_radio" layoutX="240.0" layoutY="14.0" mnemonicParsing="false" selected="true" text="In-House" toggleGroup="$SOURCE" />
+      <TextField fx:id="addPartName_text" layoutX="126.0" layoutY="115.0" />
+      <TextField fx:id="addPartPrice_text" layoutX="126.0" layoutY="222.0" />
+      <TextField fx:id="addPartID_auto" disable="true" layoutX="126.0" layoutY="60.0" promptText="Auto Generated" />
+      <TextField fx:id="addPartInventory_text" layoutX="126.0" layoutY="166.0" />
+      <TextField fx:id="addPartMax_text" layoutX="126.0" layoutY="275.0" />
+      <TextField fx:id="addPartDynamic_text" layoutX="126.0" layoutY="327.0" />
+      <TextField fx:id="addPartMin_text" layoutX="333.0" layoutY="275.0" />
+      <Button fx:id="addPartCancel_button" layoutX="276.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#cancelAddPart" text="CANCEL" />
+      <Button fx:id="addPartSave_button" layoutX="175.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#saveAddPart" text="SAVE" />
+      <Label layoutX="47.0" layoutY="64.0" text="ID" />
+      <Label layoutX="47.0" layoutY="119.0" text="Name" />
+      <Label layoutX="47.0" layoutY="170.0" text="Inventory" />
+      <Label layoutX="47.0" layoutY="226.0" text="Price/Cost" />
+      <Label layoutX="47.0" layoutY="280.0" text="Max" />
+      <Label layoutX="291.0" layoutY="280.0" text="Min" />
+      <Label fx:id="addPartDynamic_label" layoutX="47.0" layoutY="331.0" text="Machine ID" />
+      <Label layoutX="41.0" layoutY="14.0" prefHeight="17.0" prefWidth="106.0" text="ADD PART">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
