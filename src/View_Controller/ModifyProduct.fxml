@@ -26,7 +26,7 @@
             <TableColumn fx:id="modifyProductAssoPart_table_price" prefWidth="122.0" text="Price/Cost Per Unit" />
         </columns>
       </TableView>
-      <TextField fx:id="modifyProductSearch_text" layoutX="531.0" layoutY="14.0" prefHeight="25.0" prefWidth="191.0" promptText="Search by Part ID or Name" />
+      <TextField fx:id="modifyProductSearch_text" layoutX="445.0" layoutY="14.0" prefHeight="25.0" prefWidth="191.0" promptText="Search by Part ID or Name" />
       <Button fx:id="modifyProductAdd_button" layoutX="666.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#modifyProductAdd" text="ADD" />
       <Button fx:id="modifyProductRemove_button" layoutX="573.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#modifyProductRemove" prefHeight="25.0" prefWidth="149.0" text="Remove Associated Part" />
       <Button fx:id="modifyProductCancel_button" layoutX="666.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#modifyProductCancel" text="Cancel" />
@@ -48,5 +48,6 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Button fx:id="modifyProductSearch_button" layoutX="666.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#modifyProductSearch" text="Search" />
    </children>
 </AnchorPane>

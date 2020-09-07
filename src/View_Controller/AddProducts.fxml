@@ -26,11 +26,11 @@
             <TableColumn fx:id="addProductPartAsso_table_price" prefWidth="122.0" text="Price/Cost Per Unit" />
         </columns>
       </TableView>
-      <TextField fx:id="addProductSearch_text" layoutX="531.0" layoutY="14.0" prefHeight="25.0" prefWidth="191.0" promptText="Search by Part ID or Name" />
-      <Button fx:id="addPartADD_button" layoutX="666.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#addAssociatedPart" text="ADD" />
+      <TextField fx:id="addProductSearch_text" layoutX="445.0" layoutY="14.0" prefHeight="25.0" prefWidth="191.0" promptText="Search by Part ID or Name" />
+      <Button fx:id="addProductAddPart_button" layoutX="666.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#addAssociatedPart" text="ADD" />
       <Button fx:id="addProductRemove_button" layoutX="573.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#removeAssociatedPart" prefHeight="25.0" prefWidth="149.0" text="Remove Associated Part" />
       <Button fx:id="addProductCancel_button" layoutX="666.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#cancelAddProduct" text="Cancel" />
-      <Button fx:id="addproductSave_button" layoutX="573.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#saveAddProduct" prefHeight="25.0" prefWidth="52.0" text="SAVE" />
+      <Button fx:id="addProductSave_button" layoutX="573.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#saveAddProduct" prefHeight="25.0" prefWidth="52.0" text="SAVE" />
       <TextField fx:id="addProductID_auto" disable="true" editable="false" layoutX="77.0" layoutY="138.0" prefHeight="25.0" prefWidth="205.0" promptText="Auto Gen -Disabled" />
       <TextField fx:id="addProductName_text" layoutX="77.0" layoutY="189.0" prefHeight="25.0" prefWidth="205.0" />
       <TextField fx:id="addProductINV_text" layoutX="77.0" layoutY="246.0" prefHeight="25.0" prefWidth="118.0" />
@@ -48,5 +48,6 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Button fx:id="addProductSearch_button" layoutX="655.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#addProductSearch" text="Search" />
    </children>
 </AnchorPane>
